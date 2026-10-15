@@ -12,7 +12,7 @@
     body{margin:0;min-height:100vh;background:var(--navy);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink)}
     .topbar{max-width:980px;margin:auto;padding:26px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:white}
     .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.4px}
-    .logo{width:48px;height:48px;border:2px solid white;border-radius:50%;display:grid;place-items:center;font-size:17px;font-weight:900;flex-shrink:0}
+    .logo{width:48px;height:48px;object-fit:contain;border:0;border-radius:0;display:block;flex-shrink:0}
     .brand-name{font-size:21px;line-height:1.05}.brand-sub{font-size:10px;letter-spacing:1.4px;margin-top:5px}
     .location{font-size:14px;color:#e6e9f4;white-space:nowrap}
     main{max-width:800px;margin:76px auto 56px;padding:0 20px}
@@ -40,7 +40,7 @@
   <header class="topbar">
     <div class="brand" aria-label="Sam Tutors">
       <!-- Hozircha matnli belgi. O‘z logotipingizni qo‘shish uchun logo faylini assets/logo.png qilib joylang. -->
-      <div class="logo" aria-hidden="true">ST</div>
+      <img class="logo" src="/logo.png" alt="Sam Tutors logotipi">
       <div><div class="brand-name">SAM TUTORS</div><div class="brand-sub">O‘QUV MARKAZI</div></div>
     </div>
     <div class="location">📍 Samarqand</div>
